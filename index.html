@@ -16,18 +16,28 @@
     .sidebar {
       background-color: #f0f0f0;
       padding: 20px;
-      width: 320px; /* Increased width */
+      width: 380px;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 15px;
       border: 2px solid #ccc;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
     }
 
     .main {
@@ -64,7 +74,7 @@
       border-radius: 4px;
     }
 
-    h1, h2, h3 {
+    h3 {
       font-size: 20px;
       margin-bottom: 10px;
     }
@@ -76,12 +86,32 @@
       color: #007acc;
     }
 
+    .orcid-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      color: #007acc;
+    }
+
+    .orcid-link img {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
     ul {
       padding-left: 18px;
     }
 
     li {
       margin-bottom: 6px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -93,7 +123,10 @@
     <h2>薛法藍</h2>
     <a href="https://maps.google.com/?q=Taipei, Taiwan" target="_blank">🏠 Taipei, Taiwan</a>
     <a href="mailto:xuefalan@gmail.com">📧 xuefalan@gmail.com</a>
-    <a href="https://orcid.org/0009-0004-5699-9236" target="_blank">🔗 ORCID Profile</a>
+    <a class="orcid-link" href="https://orcid.org/0009-0004-5699-9236" target="_blank">
+      <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID icon" />
+      ORCID Profile
+    </a>
   </div>
 
   <div class="main">
