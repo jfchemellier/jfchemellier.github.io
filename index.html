@@ -2,25 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Under Construction</title>
+  <title>Jean-François Petit de Chemellier (薛法藍)</title>
   <style>
     body {
-      text-align: center;
       font-family: Arial, sans-serif;
-      margin-top: 100px;
-      background-color: #fdf6e3;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      min-height: 100vh;
     }
-    .message {
-      font-size: 32px;
-      color: #ff9900;
+    .sidebar {
+      background-color: #f0f0f0;
+      padding: 20px;
+      width: 250px;
     }
-    .smiley {
-      font-size: 48px;
+    .main {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    a {
+      display: block;
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="message">🚧 UNDER CONSTRUCTION 🚧</div>
-  <div class="smiley">😊</div>
+
+  <div class="sidebar">
+    <h1>Jean-François Petit de Chemellier</h1>
+    <h2>薛法藍</h2>
+    <a href="https://maps.google.com/?q=Taipei, Taiwan" target="_blank">🏠 Taipei, Taiwan</a>
+    <a href="mailto:xuefalan@gmail.com">📧 xuefalan@gmail.com</a>
+    <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">🔗 ORCID Profile</a>
+  </div>
+
+  <div class="main">
+    <div class="column">
+      <h3>Biography</h3>
+      <p>Jean-François Petit de Chemellier is a Chinese to French translator and teaches translation at Tamkang University (Taiwan). He holds a PhD in Translation and Interpretation from National Taiwan Normal University. His research interests include linguistic relativity, translation theory, and neurolinguistics.</p>
+    </div>
+    <div class="column">
+      <h3>Selected Articles</h3>
+      <ul>
+        <li><a href="#">Title of Article 1</a></li>
+        <li><a href="#">Title of Article 2</a></li>
+        <li><a href="#">Title of Article 3</a></li>
+        <!-- Add more articles as needed -->
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
