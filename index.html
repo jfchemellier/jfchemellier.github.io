@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Jean-François Petit de Chemellier (薛法藍)</title>
   <style>
     body {
@@ -12,25 +12,40 @@
       min-height: 100vh;
       background-color: #f9f9f9;
     }
+
     .sidebar {
       background-color: #f0f0f0;
       padding: 20px;
-      width: 250px;
+      width: 320px; /* Increased width */
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 2px solid #ccc;
+    }
+
     .main {
       padding: 20px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
+
     .column {
       padding: 10px;
     }
+
     .publications {
       padding: 10px;
       margin-top: 20px;
     }
+
     .publication-item {
       display: flex;
       align-items: flex-start;
@@ -41,25 +56,30 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     .journal-cover {
       width: 100px;
       height: auto;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     h1, h2, h3 {
       font-size: 20px;
       margin-bottom: 10px;
     }
+
     a {
       display: block;
       margin-bottom: 8px;
       text-decoration: none;
       color: #007acc;
     }
+
     ul {
       padding-left: 18px;
     }
+
     li {
       margin-bottom: 6px;
     }
@@ -68,6 +88,7 @@
 <body>
 
   <div class="sidebar">
+    <img src="profile-pic.jpg" alt="Profile picture" class="profile-pic" />
     <h1>Jean-François Petit de Chemellier</h1>
     <h2>薛法藍</h2>
     <a href="https://maps.google.com/?q=Taipei, Taiwan" target="_blank">🏠 Taipei, Taiwan</a>
@@ -89,13 +110,12 @@
         <div>
           <p>
             <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">
-              ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing
+              ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing.
             </a><br />
-            Petit de Chemellier, J.-F., & Chan, S. (2025). ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing. <em>Bilingualism: Language and Cognition</em>, 1–13. doi:10.1017/S1366728925000227
+            Petit de Chemellier, J.-F., & Chan, S. (2025). <em>Bilingualism: Language and Cognition</em>, 1–13. doi:10.1017/S1366728925000227
           </p>
         </div>
       </div>
-      <!-- Additional publications can be added here following the same structure -->
     </div>
   </div>
 
