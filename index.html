@@ -21,7 +21,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 230px;
+      width: 240px;
       height: 100vh;
       background-color: #f0f0f0;
       padding: 20px;
@@ -31,7 +31,7 @@
     }
 
     .main-content {
-      margin-left: 230px; /* fixed to match sidebar width */
+      margin-left: 240px; /* fixed to match sidebar width */
       flex-grow: 1;
       padding: 20px;
     }
@@ -129,9 +129,11 @@
       line-height: 1.6;
     }
 
-    /* Added class for spacing between specific paragraphs */
+    /* New style for spacing between paragraphs */
     .spaced-paragraph {
-      margin-bottom: 1.5em;
+      margin-bottom: 1.5em !important;
+      padding-bottom: 1.5em;
+      display: block;
     }
 
     @media (max-width: 768px) {
@@ -225,7 +227,6 @@
                       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
               </iframe>
             </div>
-
           </div>
         </div>
       </div>
