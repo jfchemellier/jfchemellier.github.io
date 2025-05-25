@@ -4,227 +4,72 @@
   <meta charset="UTF-8" />
   <title>Jean-François Petit de Chemellier (薛法藍)</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      min-height: 100vh;
-      background-color: #f9f9f9;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+      max-width: 700px;
     }
-
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 440px;
-      height: 100vh;
-      background-color: #f0f0f0;
-      padding: 20px;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-      overflow-y: auto;
-      text-align: center;
+    h1, h2, h3 {
+      margin-bottom: 0.3em;
     }
-
-    .main-content {
-      margin-left: 440px; /* fixed to match sidebar width */
-      flex-grow: 1;
-      padding: 20px;
-    }
-
-    .banner-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .profile-pic {
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 2px solid #ccc;
-    }
-
-    h1 {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
     a {
-      display: block;
-      margin-bottom: 8px;
-      text-decoration: none;
       color: #007acc;
-    }
-
-    .orcid-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
       text-decoration: none;
-      color: #007acc;
-      margin-bottom: 8px;
     }
-
-    .orcid-link img {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
+    a:hover {
+      text-decoration: underline;
     }
-
-    .column {
-      padding: 10px 0;
-    }
-
-    .publications {
-      padding: 10px 0;
-    }
-
-    .publication-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-      margin-bottom: 20px;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .journal-cover {
+    img.profile-pic {
       width: 100px;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 50%;
+      margin-bottom: 1em;
     }
-
-    ul {
-      padding-left: 18px;
+    .section {
+      margin-bottom: 2em;
     }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    p {
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
-      .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-      }
-
-      .main-content {
-        margin-left: 0;
-      }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <img src="profile-pic.jpg" alt="Profile picture" class="profile-pic" />
-    <h1>Jean-François</h1>
-    <h1>Petit de Chemellier</h1>
-    <h1>薛法藍</h1>
-    <a href="https://maps.google.com/?q=Taipei, Taiwan" target="_blank">🏠 Taipei, Taiwan</a>
-    <a href="mailto:xuefalan@gmail.com">📧 xuefalan@gmail.com</a>
-    <a class="orcid-link" href="https://orcid.org/0009-0004-5699-9236" target="_blank">
-      <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID icon" />
-      ORCID Profile
-    </a>
-    <a class="orcid-link" href="https://scholar.google.com/citations?user=evThVLsAAAAJ&hl=en" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar icon" style="width: 16px; height: 16px;" />
-      Google Scholar
-    </a>
+  <img src="profile-pic.jpg" alt="Profile picture" class="profile-pic" />
+  <h1>Jean-François Petit de Chemellier (薛法藍)</h1>
+  <p><a href="mailto:xuefalan@gmail.com">📧 xuefalan@gmail.com</a> | <a href="https://orcid.org/0009-0004-5699-9236" target="_blank">ORCID</a> | <a href="https://scholar.google.com/citations?user=evThVLsAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+  <p>🏠 Taipei, Taiwan</p>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>I am a freelance Chinese-French translator and translation teacher at Tamkang University (Taiwan). I hold a PhD in Translation and Interpretation from National Taiwan Normal University. My interests include translation studies and neurolinguistics.</p>
   </div>
 
-  <div class="main-content">
-    <img src="brainwaves-pic.jpg" alt="Brainwaves banner" class="banner-img" />
+  <div class="section">
+    <h2>Publications</h2>
+    <p>
+      <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">
+        ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing
+      </a><br />
+      Petit de Chemellier, J.-F., & Chan, S. (2025). <em>Bilingualism: Language and Cognition</em>.
+    </p>
+    <p>
+      <a href="https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92" target="_blank">
+        Professional Translator and Interpreter Training in France: Specificities and Challenges
+      </a><br />
+      Petit de Chemellier, J.-F. (2019). <em>Studies of Interpretation and Translation</em>.
+    </p>
+  </div>
 
-    <div class="column">
-      <h3>About me</h3>
-      <p>
-        I am a freelance Chinese to French translator and I teach translation at Tamkang University (Taiwan). I hold a PhD in Translation and Interpretation from National Taiwan Normal University. My areas of interest are translation studies and neurolinguistics.
-      </p>
-    </div>
-
-    <div class="column">
-      <h3>Publications</h3>
-      <div class="publications">
-        <div class="publication-item">
-          <img src="blc-cover.jpg" alt="Bilingualism: Language and Cognition Cover" class="journal-cover" />
-          <div>
-            <p>
-              <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">
-                ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing
-              </a><br />
-              Petit de Chemellier, J.-F., & Chan, S. (2025). ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing. <em>Bilingualism: Language and Cognition</em>, 1–13. doi:10.1017/S1366728925000227
-            </p>
-          </div>
-        </div>
-
-        <div class="publication-item">
-          <img src="sti-cover.jpg" alt="Studies of Interpretation and Translation Cover" class="journal-cover" />
-          <div>
-            <p>
-              <a href="https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92" target="_blank">
-                Professional Translator and Interpreter Training in France: Specificities and Challenges
-              </a><br />
-              Petit de Chemellier, J.-F. (2019). Professional Translator and Interpreter Training in France: Specificities and Challenges. <em>Studies of Interpretation and Translation</em>, Vol. 23, pp. 79–92.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <h3>Research Highlights</h3>
-      <div class="publications">
-        <div class="publication-item">
-          <div>
-            <p><strong>
-              Abstract from <em>‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing</em>:
-            </strong></p>
-            <p>
-              Many erroneous literal translations, often produced by low-proficiency bilinguals, can be attributed to a tendency to favor typical translation equivalents; however, the underlying neural mechanism remains poorly understood. This study investigated this typicality effect in real-time translation with the event-related brain potential (ERP) technique. Mandarin Chinese–English bilinguals were presented with a Chinese verb phrase (e.g., <em>kāi chuānghù</em> “open the window” or <em>kāi diànnăo</em> “turn on the computer”) followed by an English verb (e.g., <em>open</em> (a typical translation) or <em>turn on</em> (an atypical translation)) and judged whether the English verb was an appropriate/congruent translation of the verb in the Chinese verb phrase previously presented (e.g., <em>kāi</em>). Compared to typical translation equivalents, atypical equivalents elicited an N400, indicating retrieval difficulty, and an f-PNP in congruent trials, reflecting the effort to inhibit typical translations and integrate atypical ones. This pattern may arise from differences in resting-level activation between typical and atypical equivalents.
-            </p>
-            <p>
-              Below is a scalp map video showing the Atypical minus Typical translation equivalents difference in congruent trials (e.g., <em>kāi diànnăo</em> “turn on the computer” followed by <em>turn on</em> minus <em>kāi chuānghù</em> “open the window” followed by <em>open</em>). Compared to Typical translation equivalents, we can see that atypical translation equivalents elicit a posterior N400 (from 300 to 500 ms) followed by a frontal-Post N400 Positivity (f-PNP) (from 600 to 900 ms). All the data is available on <a href="https://doi.org/10.6084/m9.figshare.28014482" target="_blank">Figshare</a>.
-            </p>
-
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-top: 10px;">
-              <iframe src="https://www.youtube.com/embed/Jedt0tAC3gk" frameborder="0" allowfullscreen 
-                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div class="section">
+    <h2>Research Highlight</h2>
+    <p>
+      This study investigates typical vs. atypical translation equivalents using ERP, revealing neural mechanisms behind translation preferences in bilinguals.
+    </p>
+    <iframe src="https://www.youtube.com/embed/Jedt0tAC3gk" allowfullscreen></iframe>
   </div>
 
 </body>
