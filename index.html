@@ -11,9 +11,19 @@
       display: flex;
       min-height: 100vh;
       background-color: #f9f9f9;
+      flex-direction: column;
     }
-    
-<img src="brainwaves-pic.jpg" alt="Brainwaves banner" style="width: 100%; height: auto; display: block;" />
+
+    .banner-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      display: flex;
+      flex-grow: 1;
+    }
 
     .sidebar {
       background-color: #f0f0f0;
@@ -119,52 +129,57 @@
 </head>
 <body>
 
-  <div class="sidebar">
-    <img src="profile-pic.jpg" alt="Profile picture" class="profile-pic" />
-    <h1>Jean-François</h1>
-    <h1>Petit de Chemellier</h1>
-    <h1>薛法藍</h1>
-    <a href="https://maps.google.com/?q=Taipei, Taiwan" target="_blank">🏠 Taipei, Taiwan</a>
-    <a href="mailto:xuefalan@gmail.com">📧 xuefalan@gmail.com</a>
-    <a class="orcid-link" href="https://orcid.org/0009-0004-5699-9236" target="_blank">
-      <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID icon" />
-      ORCID Profile
-    </a>
-  </div>
+  <!-- Banner image at top -->
+  <img src="brainwaves-pic.jpg" alt="Brainwaves banner" class="banner-img" />
 
-  <div class="main">
-    <div class="column">
-      <h3>About me</h3>
-      <p>
-        Jean-François Petit de Chemellier is a freelance Chinese to French translator and teaches translation at Tamkang University (Taiwan). He holds a PhD in Translation and Interpretation from National Taiwan Normal University. His research interests include linguistic relativity, translation theory, and neurolinguistics.
-      </p>
+  <div class="content">
+    <div class="sidebar">
+      <img src="profile-pic.jpg" alt="Profile picture" class="profile-pic" />
+      <h1>Jean-François</h1>
+      <h1>Petit de Chemellier</h1>
+      <h1>薛法藍</h1>
+      <a href="https://maps.google.com/?q=Taipei, Taiwan" target="_blank">🏠 Taipei, Taiwan</a>
+      <a href="mailto:xuefalan@gmail.com">📧 xuefalan@gmail.com</a>
+      <a class="orcid-link" href="https://orcid.org/0009-0004-5699-9236" target="_blank">
+        <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID icon" />
+        ORCID Profile
+      </a>
     </div>
 
-    <div class="column">
-      <h3>Publications</h3>
-      <div class="publications">
-        <div class="publication-item">
-          <img src="blc-cover.jpg" alt="Bilingualism: Language and Cognition Cover" class="journal-cover" />
-          <div>
-            <p>
-              <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">
-                ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing
-              </a><br />
-              Petit de Chemellier, J.-F., & Chan, S. (2025). ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing. <em>Bilingualism: Language and Cognition</em>, 1–13. doi:10.1017/S1366728925000227
-            </p>
-          </div>
-        </div>
+    <div class="main">
+      <div class="column">
+        <h3>About me</h3>
+        <p>
+          Jean-François Petit de Chemellier is a freelance Chinese to French translator and teaches translation at Tamkang University (Taiwan). He holds a PhD in Translation and Interpretation from National Taiwan Normal University. His research interests include linguistic relativity, translation theory, and neurolinguistics.
+        </p>
+      </div>
 
-        <div class="publication-item">
-          <img src="sti-cover.jpg" alt="Studies of Interpretation and Translation Cover" class="journal-cover" />
-          <div>
-            <p>
-              <a href="https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92" target="_blank">
-                Professional Translator and Interpreter Training in France: Specificities and Challenges
-              </a><br />
-              Petit de Chemellier, J.-F. (2019). Professional Translator and Interpreter Training in France: Specificities and Challenges. <em>Studies of Interpretation and Translation</em>, Vol. 23, pp. 79–92.
-              <br />https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92
-            </p>
+      <div class="column">
+        <h3>Publications</h3>
+        <div class="publications">
+          <div class="publication-item">
+            <img src="blc-cover.jpg" alt="Bilingualism: Language and Cognition Cover" class="journal-cover" />
+            <div>
+              <p>
+                <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">
+                  ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing
+                </a><br />
+                Petit de Chemellier, J.-F., & Chan, S. (2025). ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing. <em>Bilingualism: Language and Cognition</em>, 1–13. doi:10.1017/S1366728925000227
+              </p>
+            </div>
+          </div>
+
+          <div class="publication-item">
+            <img src="sti-cover.jpg" alt="Studies of Interpretation and Translation Cover" class="journal-cover" />
+            <div>
+              <p>
+                <a href="https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92" target="_blank">
+                  Professional Translator and Interpreter Training in France: Specificities and Challenges
+                </a><br />
+                Petit de Chemellier, J.-F. (2019). Professional Translator and Interpreter Training in France: Specificities and Challenges. <em>Studies of Interpretation and Translation</em>, Vol. 23, pp. 79–92.
+                <br />https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92
+              </p>
+            </div>
           </div>
         </div>
       </div>
