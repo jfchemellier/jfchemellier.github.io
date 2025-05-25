@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Jean-François Petit de Chemellier (薛法藍)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,12 +11,10 @@
     }
 
     body {
-      font-family: 'Press Start 2P', cursive;
-      background: url('https://www.transparenttextures.com/patterns/checkered-pattern.png');
-      color: lime;
+      font-family: Arial, sans-serif;
       display: flex;
       min-height: 100vh;
-      cursor: url('https://cur.cursors-4u.net/nature/nat-10/nat921.cur'), auto;
+      background-color: #e0f7f7;
     }
 
     .sidebar {
@@ -26,16 +23,15 @@
       left: 0;
       width: 240px;
       height: 100vh;
-      background: linear-gradient(to bottom, #ff00ff, #00ffff);
+      background-color: #a0d9d9;
       padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       overflow-y: auto;
       text-align: center;
-      border-right: 4px dashed yellow;
-      color: black;
     }
 
     .main-content {
-      margin-left: 240px;
+      margin-left: 240px; /* fixed to match sidebar width */
       flex-grow: 1;
       padding: 20px;
     }
@@ -45,7 +41,6 @@
       height: auto;
       display: block;
       margin-bottom: 20px;
-      border: 4px groove hotpink;
     }
 
     .profile-pic {
@@ -54,22 +49,34 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 15px;
-      border: 4px dotted #000;
+      border: 2px solid #ccc;
     }
 
-    h1, h2, h3 {
-      color: yellow;
+    h1 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 20px;
       margin-bottom: 10px;
     }
 
+    /* Links: inline by default */
     a {
       text-decoration: none;
-      color: red;
-      background-color: yellow;
-      border: 3px groove black;
-      padding: 4px 6px;
-      display: inline-block;
-      margin-bottom: 6px;
+      color: #007acc;
+    }
+
+    /* Sidebar links stacked vertically */
+    .sidebar a {
+      display: block;
+      margin-bottom: 8px;
     }
 
     .orcid-link {
@@ -77,6 +84,8 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
+      text-decoration: none;
+      color: #007acc;
       margin-bottom: 8px;
     }
 
@@ -99,16 +108,16 @@
       align-items: flex-start;
       gap: 15px;
       margin-bottom: 20px;
-      background-color: black;
+      background-color: #fff;
       padding: 15px;
       border-radius: 8px;
-      border: 3px inset lime;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .journal-cover {
       width: 100px;
       height: auto;
-      border: 2px solid #0f0;
+      border: 1px solid #ccc;
       border-radius: 4px;
     }
 
@@ -126,28 +135,9 @@
     }
 
     .spaced-paragraph {
-      margin-bottom: 1.2em;
+      margin-bottom: 0.7em !important;
       padding-bottom: 0.7em;
       display: block;
-    }
-
-    .blink {
-      animation: blinker 1s linear infinite;
-    }
-
-    @keyframes blinker {
-      50% {
-        opacity: 0;
-      }
-    }
-
-    marquee {
-      background-color: yellow;
-      color: red;
-      font-weight: bold;
-      padding: 10px;
-      border: 3px double black;
-      margin-bottom: 20px;
     }
 
     @media (max-width: 768px) {
@@ -180,9 +170,9 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar icon" style="width: 16px; height: 16px;" />
       Google Scholar
     </a>
-    <img src="https://www.animatedimages.org/data/media/152/animated-under-construction-image-0034.gif" alt="Under construction" style="margin-top:20px; width:100%;">
   </div>
 
+  <div class="main-content">
     <img src="brainwaves-pic.jpg" alt="Brainwaves banner" class="banner-img" />
 
     <div class="column">
@@ -200,9 +190,9 @@
           <div>
             <p>
               <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">
-                ‘Don’t forget to close the light!’
+                ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing
               </a><br />
-              Petit de Chemellier, J.-F., & Chan, S. (2025). ERP evidence for the facilitation of typical translation equivalents. <em>Bilingualism: Language and Cognition</em>, 1–13.
+              Petit de Chemellier, J.-F., & Chan, S. (2025). ‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing. <em>Bilingualism: Language and Cognition</em>, 1–13. doi:10.1017/S1366728925000227
             </p>
           </div>
         </div>
@@ -212,9 +202,9 @@
           <div>
             <p>
               <a href="https://www.airitilibrary.com/Article/Detail?DocID=a0000024-201911-202007020020-202007020020-79-92" target="_blank">
-                Translator and Interpreter Training in France
+                Professional Translator and Interpreter Training in France: Specificities and Challenges
               </a><br />
-              Petit de Chemellier, J.-F. (2019). Specificities and Challenges. <em>Studies of Interpretation and Translation</em>, Vol. 23, pp. 79–92.
+              Petit de Chemellier, J.-F. (2019). Professional Translator and Interpreter Training in France: Specificities and Challenges. <em>Studies of Interpretation and Translation</em>, Vol. 23, pp. 79–92.
             </p>
           </div>
         </div>
@@ -227,13 +217,13 @@
         <div class="publication-item">
           <div>
             <p>
-              Abstract from <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">‘Don’t forget to close the light!’</a>:
+              Abstract from <a href="https://doi.org/10.1017/S1366728925000227" target="_blank">‘Don’t forget to close the light!’: ERP evidence for the facilitation of typical translation equivalents in bilingual processing</a>:
             </p>
             <p class="spaced-paragraph">
-              Many erroneous literal translations, often produced by low-proficiency bilinguals, can be attributed to a tendency to favor typical translation equivalents; however, the underlying neural mechanism remains poorly understood.
+              Many erroneous literal translations, often produced by low-proficiency bilinguals, can be attributed to a tendency to favor typical translation equivalents; however, the underlying neural mechanism remains poorly understood. This study investigated this typicality effect in real-time translation with the event-related brain potential (ERP) technique. Mandarin Chinese–English bilinguals were presented with a Chinese verb phrase (e.g., <em>kāi chuānghù</em> 開窗戶 “open the window” or <em>kāi diànnăo</em> 開電腦 “turn on the computer”) followed by an English verb (e.g., <em>open</em> (a typical translation) or <em>turn on</em> (an atypical translation)) and judged whether the English verb was an appropriate/congruent translation of the verb in the Chinese verb phrase previously presented (e.g., <em>kāi</em> 開). Compared to typical translation equivalents, atypical equivalents elicited an N400, indicating retrieval difficulty, and an f-PNP in congruent trials, reflecting the effort to inhibit typical translations and integrate atypical ones. This pattern may arise from differences in resting-level activation between typical and atypical equivalents.
             </p>
             <p class="spaced-paragraph">
-              This study investigated this typicality effect in real-time translation with ERP. Compared to typical equivalents, atypical ones elicited an N400 and an f-PNP in congruent trials. Full data on <a href="https://doi.org/10.6084/m9.figshare.28014482" target="_blank">Figshare</a>.
+              Below is a scalp map video showing the Atypical minus Typical translation equivalents difference in congruent trials (e.g., <em>kāi diànnăo</em> 開電腦 “turn on the computer” followed by <em>turn on</em> minus <em>kāi chuānghù</em> 開窗戶 “open the window” followed by <em>open</em>), occuring over 1200 milliseconds. Compared to Typical translation equivalents, we can see that atypical translation equivalents elicit a posterior N400 (from 300 to 500 ms) followed by a frontal-Post N400 Positivity (f-PNP) (from 600 to 900 ms). All the data is available on <a href="https://doi.org/10.6084/m9.figshare.28014482" target="_blank">Figshare</a>.
             </p>
 
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-top: 10px;">
